@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Find E</title>
 </head>
+<script type="text/javascript">
+	function FillE () {
+		let input = document.getElementById("InputBox").value;
+		let string = "E."
+		s = 'E'.repeat(input);
+		newstring = string + s;
+		document.getElementById("Replace").innerHTML = newstring;
+ 	}
+</script>
 <body>
-
+<input type="text" id="InputBox" value="Put a number here"> </Input>
+<button onclick="FillE()">Push</button>
+<p id="Replace">Will be replaced with E</p>
 </body>
 </html>
